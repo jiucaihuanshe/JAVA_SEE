@@ -54,6 +54,7 @@ public class HttpRequest {
 			 * GET /index.html HTTP/1.1
 			 */
 			String line = br.readLine();
+			System.out.println(line);
 			//读取的请求信息不能为null或""
 			if(line != null && line.length()>0){
 				String[] data = line.split("\\s");//以空格切割
