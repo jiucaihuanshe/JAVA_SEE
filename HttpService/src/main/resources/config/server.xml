@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server>
+	<service>
+		<!-- 配置服务端遵循的协议、监听的端口、线程池的大小 -->
+		<connector protocol="HTTP/1.1" port="8080" maxThread="100" />
+		<!-- 配置服务端存储资源的目录 -->
+		<webroot>F:/tedu/workspace/JAVA_SEE/HttpService/src/main/webapp/WEB-INF/webapps</webroot>
+		<!-- 设置响应404页面 -->
+		<not-found-page>404.html</not-found-page>
+	</service>
+	<!-- 类型映射：根据浏览器请求资源的后缀名,设置响应的数据类型 -->
+	<type-mappings>
+		<type-mapping ext="html" type="text/html" />
+		<type-mapping ext="jpg" type="image/jpeg"/>
+		<type-mapping ext="png" type="image/png"/>
+		<type-mapping ext="gif" type="image/gif"/>
+		<type-mapping ext="ico" type="image/ico"/>
+	</type-mappings>
+</server>
